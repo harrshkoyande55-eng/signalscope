@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: signalscope
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    healthCheckPath: /
+    autoDeploy: true
